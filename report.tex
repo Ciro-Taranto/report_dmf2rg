@@ -26,6 +26,7 @@
 \usepackage{amsmath,amsfonts,amsthm} % Math packages
 \usepackage{color}
 \usepackage{sectsty} % Allows customizing section commands
+\usepackage{graphicx}
 \allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
 
 \usepackage{fancyhdr} % Custom headers and footers
@@ -90,19 +91,35 @@ In the second part of this report, we discuss several ideas and proposals that a
 \section{Method and cutoff choice}
 We used a \textit{local conserving cutoff}, which means that the $\Lambda$ dependence of the Green's function is chosen in such a way that the DMFT self-consistency condition is verified for every $\Lambda$-value:
 \begin{equation}
-\int_{\mathbf{k}} G^\Lambda_{\mathbf{k},\nu}|_{\Sigma_{\mathrm{DMFT}}} = \mathcal{G}_{\nu}.   
+\label{eq:selcon}
+\int_{\mathbf{k}} G^\Lambda_{\mathbf{k},\nu}|_{\Sigma^{\mathrm{DMFT}}} = \mathcal{G}_{\nu}.   
 \end{equation}
-Here $\mathcal{G}_{\nu}$ is the Green's function of the Anderson Impurity model associated with the DMFT problem of the lattice system considered. The $\Lambda$-dependent Green's function is defined by: 
+Here $\mathcal{G}_{\nu}$ is the Green's function of the Anderson Impurity model associated with the DMFT problem of the lattice system considered. The notation $|_{\Sigma^{\mathrm{DMFT}}}$ means that the Green's function is computed with the DMFT self-energy $\Sigma_\nu^{\mathrm{DMFT}}$, see below. 
+The $\Lambda$-dependent Green's function is defined by: 
 \begin{equation}
-G_{\mathbf{k},\nu}^\Lambda = \left[i\nu+(1-\Lambda)\epsilon_{\mathbf{k}}+\mu +f^\Lambda \right]^{-1}
+G_{\mathbf{k},\nu}^\Lambda = \left[i\nu+(1-\Lambda)\epsilon_{\mathbf{k}}
++\mu -
+f^\Lambda_{\nu}+ \Delta_{\nu} -\Sigma_{\mathbf{k},\nu}^\Lambda
+ \right]^{-1},
 \end{equation}
+where $\Delta_\nu$ is the hybridization function associated to the Anderson Impurity model, $\mathcal{G}_\nu=\left[i\nu-\Delta_\nu+\mu \right]^{-1}$. The function $f^\Lambda_\nu$ is fixed to guarantee equation \ref{eq:selcon}. Considering that $G$ and $\mathcal{G}$ fulfill the DMFT self-consistency condition one has $f^{\Lambda=1}_\nu=1$, $f^{\Lambda=0}_\nu=0$.  
 %------------------------------------------------
 
 \section{Results}
 \subsection{Half filling at strong coupling} 
 \begin{itemize}
 \item Flow at strong coupling: flow of the magnetic channel+flow of the susceptibility; 
-\item Extrapolation of N\' eel temperature from susceptibility (with self-energy);
+\item The N\' eel temperature can be extrapolated from the inverse of the susceptibility. 
+While the N\' eel temperature is strongly reduced by the local fluctuations including nonlocal fluctuations and self-energy feedback does not reduce the temperature much further, at least in the half-filling, particle-hole symmetric case of Fig. \ref{fig:extrasusc}. Away from half-filling where also other channels come into play, the nonlocal channel competition is slightly more effective, but we never find a complete suppression of incommensurate antiferromagnetism to ascribe to nonlocal fluctuations in other channels. 
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{plots/extrapolate_susc.png}
+\caption{Extrapolation of the susceptibility for $U=4t$ and in the particle-hole symmetric case.} 
+\label{fig:extrasusc} 
+\end{center}
+\end{figure}
+
+
 \item Magnetic channel frequency plot, at strong and weak coupling; 
 \end{itemize} 
 %----------------------------------------------------------------------------------------
