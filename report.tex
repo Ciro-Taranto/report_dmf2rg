@@ -111,21 +111,43 @@ where $\Delta_\nu$ is the hybridization function associated to the Anderson Impu
 \item Flow at strong coupling: flow of the magnetic channel+flow of the susceptibility; 
 \item The N\' eel temperature can be extrapolated from the inverse of the susceptibility. 
 While the N\' eel temperature is strongly reduced by the local fluctuations including nonlocal fluctuations and self-energy feedback does not reduce the temperature much further, at least in the half-filling, particle-hole symmetric case of Fig. \ref{fig:extrasusc}. Away from half-filling where also other channels come into play, the nonlocal channel competition is slightly more effective, but we never find a complete suppression of incommensurate antiferromagnetism to ascribe to nonlocal fluctuations in other channels. 
+
+\item Magnetic channel frequency plot, at strong and weak coupling; 
+\end{itemize} 
+%----------------------------------------------------------------------------------------
+\subsection{Away from half filling}
+
 \begin{figure}[t!]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{plots/extrapolate_susc.png}
+\caption{Critical scale and $d$-wave fluctuations for $U=8t$, $T=0.08t$ and $t'=0.2$. The orange and purple lines refer to the \textit{decoupled} case, described in the text.} 
+\label{fig:phasediag} 
+\end{center}
+\end{figure}
+
+
+\begin{itemize}
+\item In Fig. \ref{fig:phasediag} we show the \textit{critical scale} for a parameter set at strong coupling ($U=8t$) and for $T=0.08t$. 
+We observe that for doping values up to $\delta = 0.18$ the flow stops at a value of $\Lambda > 0$. With our cutoff choice this means that the system shows an instability when the "nonlocality" of the Green's function is further increased. 
+The instability is always of the incommensurate antiferromagnetic type, with incommensurability vector that do not necessarly correspond to the maximum of the particle-hole bubble (with DMFT self-energy). 
+In the same figure, we compare the critical scale with the one obtained including in the flow equations only the magnetic and the $d$-wave superconducting channel. 
+We can see that suppressing the channel competition slightly increases the tendency to iAF.
+
+More important is the study of the maximum of the $d$-wave pairing channel.
+Although the numerical values are always very small ($<30t$) when compared to the leading magnetic channel, $\mathcal{O}(10^3)$, it is clear that when the magnetic fluctuations become large these drive also the values of the pairing channel. 
+The strong decrease of the $d$-wave pairing for small doping, is due to the fact that we do not enter the broken symmetry phase, but stop the flow when the critical scale is reached.
+To identify the mechanism responsible for the formation of the $d$-wave pairing fluctuations we compute the flow including only the magnetic and $d$-wave pairing channel. 
+we can see that, by doing so, the $d$-wave pairing is further enhanced. 
+To conclude: a $d$-wave instability is not observed at the temperature studied. However, $d$-wave pairing fluctuations are driven by the magnetic channel. These could lead to an instability either at lowever temperature or if one would be able to continue the flow also beyond the critical scale, or in the broken symmetry region (assuming that for some reason, or due to order parameter fluctuations beyond our method, the magnetic order is not realized).
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{plots/pairing_plus_criscale.png}
 \caption{Extrapolation of the susceptibility for $U=4t$ and in the particle-hole symmetric case.} 
 \label{fig:extrasusc} 
 \end{center}
 \end{figure}
 
 
-\item Magnetic channel frequency plot, at strong and weak coupling; 
-\end{itemize} 
-%----------------------------------------------------------------------------------------
-\subsection{Away from half filling}
-\begin{itemize}
-\item doping scan at fixed temperature $\beta=50$: Critical scale and pairing fluctuations; 
 \item flow of the d-wave channel (at different temperatures?); 
 \item Perpendicular ladder, comparison of the $d$-wave in different schemes: PL, decoupled, dmf2rg; 
 \end{itemize}  

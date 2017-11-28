@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2017.6.8)  28 NOV 2017 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2017.6.8)  28 NOV 2017 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,7 +438,11 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 \f@ncyO@erf=\skip60
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `fig:extrasusc' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -456,8 +460,7 @@ LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 67.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 67.
 
-
-(/usr/share/texmf/tex/latex/fourier/fmlfutm.fd
+ (/usr/share/texmf/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 67.
@@ -625,29 +628,41 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
 File: plots/extrapolate_susc.png Graphic file (type png)
 
 <use plots/extrapolate_susc.png>
-Package pdftex.def Info: plots/extrapolate_susc.png used on input line 115.
+Package pdftex.def Info: plots/extrapolate_susc.png used on input line 116.
 (pdftex.def)             Requested size: 334.60571pt x 223.0819pt.
+
+<plots/pairing_plus_criscale.png, id=10, 722.7pt x 722.7pt>
+File: plots/pairing_plus_criscale.png Graphic file (type png)
+
+<use plots/pairing_plus_criscale.png>
+Package pdftex.def Info: plots/pairing_plus_criscale.png used on input line 130
+.
+(pdftex.def)             Requested size: 334.60571pt x 334.60742pt.
  [2] [3 <./plots/extrapolate_susc.png>]
-[4] (./report.aux) ) 
+[4 <./plots/pairing_plus_criscale.png>] (./report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5557 strings out of 493091
- 80237 string characters out of 6142993
- 202520 words of memory out of 5000000
- 8886 multiletter control sequences out of 15000+600000
+ 5562 strings out of 493091
+ 80407 string characters out of 6142993
+ 203559 words of memory out of 5000000
+ 8890 multiletter control sequences out of 15000+600000
  112373 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,47p,388b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/t
-exmf/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texmf/fonts/type1/p
-ublic/fourier/fourier-mex.pfb></usr/share/texmf/fonts/type1/public/fourier/four
-ier-ml.pfb></usr/share/texmf/fonts/type1/public/fourier/fourier-mlit.pfb></usr/
-share/texmf/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/t
-ype1/adobe/utopia/putb8a.pfb></usr/share/texmf/fonts/type1/adobe/utopia/putr8a.
-pfb></usr/share/texmf/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on report.pdf (4 pages, 130333 bytes).
+ 46i,12n,47p,554b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
+ublic/fourier/fourier-mcl.pfb></usr/share/texmf/fonts/type1/public/fourier/four
+ier-mex.pfb></usr/share/texmf/fonts/type1/public/fourier/fourier-ml.pfb></usr/s
+hare/texmf/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texmf/fonts/
+type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/adobe/utopia/
+putb8a.pfb></usr/share/texmf/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/te
+xmf/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on report.pdf (4 pages, 441011 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
